@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Assassin's Creed</title>
+  <script src="jquery.js" type="text/javascript"></script>
+  <script src="jquery.nicescroll.min.js" type="text/javascript"></script>
+  <script src="parallaxImg.js" type="text/javascript"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+  <script type="text/javascript">
+    $(document).on("ready", function() {
+      var parallaxSettings = {
+        initialOpacity: 1.0, //from 0 to 1, e.g. 0.34 is a valid value. 0 = transparent, 1 = Opaque
+        opacitySpeed: 0.01, //values from 0.01 to 1 -> 0.01: slowly appears on screen; 1: appears as soon as the user scrolls 1px
+        pageLoader: true
+      };
+ 
+      parallaxImgScroll(parallaxSettings);
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#">Home</a><a href="#">Cyntss Page</a><a href="#">Documentation</a>
+    </nav>
+  </header>
+  <section>
+    <article class="parallax-img-container">
+      <h1>Asssassin's Creed</h1>
+      <h3>Everything is permitted, Nothing is true.</h3>
+      <a class="btn-download-init" href="https://github.com/mohanqwerty5">Join Us !</a>
+      <!-- images for parallax -->
+      <img src="smoke-01.png" class="parallax-move" data-ps-z-index="1" data-ps-speed="1" data-ps-vertical-position="700" data-ps-horizontal-position="420" />
+     
+      <img src="smoke-03.png" class="parallax-move" data-ps-z-index="1" data-ps-speed="1" data-ps-vertical-position="700" data-ps-horizontal-position="300" />
+      <img src="smoke-04.png" class="parallax-move" data-ps-z-index="1" data-ps-speed="0.5" data-ps-vertical-position="500" data-ps-horizontal-position="620" />
+      <img src="smoke-05.png" class="parallax-move" data-ps-z-index="1" data-ps-speed="1" data-ps-vertical-position="600" data-ps-horizontal-position="0" />
+      <img src="smoke-06.png" class="parallax-move" data-ps-z-index="1" data-ps-speed="0.4" data-ps-vertical-position="200" data-ps-horizontal-position="520" />
+      <img src="smoke-07.png" class="parallax-move" data-ps-z-index="1" data-ps-speed="0.3" data-ps-vertical-position="300" data-ps-horizontal-position="320" />
+      <img src="smoke-06.png" class="parallax-move" data-ps-z-index="1" data-ps-speed="0.2" data-ps-vertical-position="-900" data-ps-horizontal-position="220" />
+      <img src="smoke-05.png" class="parallax-move" data-ps-z-index="1" data-ps-speed="0.3" data-ps-vertical-position="-600" data-ps-horizontal-position="150" />
+      <img src="stick.png" class="parallax-move" data-ps-z-index="2" data-ps-speed="1" data-ps-vertical-position="1200" data-ps-horizontal-position-right="0" />
+      <img src="003.png" class="parallax-move" data-ps-z-index="2" data-ps-speed="0.4" data-ps-vertical-position="-200" data-ps-horizontal-position="-0" />
+       
+   
+      <img src="002.png" class="parallax-move" data-ps-z-index="3" data-ps-speed="0.5" data-ps-vertical-position="-400" data-ps-horizontal-position="-0" />
+      <img src="birds.png" class="parallax-move" data-ps-z-index="4" data-ps-speed="1" data-ps-vertical-position="-300" data-ps-horizontal-position="600" />
+      <img src="black-cloud.png" class="parallax-move" data-ps-z-index="5" data-ps-speed="0.35" data-ps-vertical-position="-400" data-ps-horizontal-position="-1">
+    </article>
+  </section>
+  <section>
+    <article class="parallax-img-container">
+      <h2>Killing Is Better Than Giving Mercy !</h2>
+      <p>content inside the article does not be affected by parallaximg.js</p>
+      <h3>I made this inspired by Assassins Unity</h3>
+      <img id="parallax-img-2" class="parallax-move" src="triangle.png" />
+      <img id="parallax-img-3" class="parallax-move" src="square.png" />
+      <img id="parallax-img-4" class="parallax-move" src="circle.png" />
+      <img id="parallax-img-5" class="parallax-move" src="ex.png" />
+      <img id="parallax-img-6" class="parallax-move" src="triangle.png" />
+      <img id="parallax-img-7" class="parallax-move" src="square.png" />
+      <img id="parallax-img-7" class="parallax-move" src="circle.png" />
+      <img id="parallax-img-5" class="parallax-move" src="ex.png" />
+      <img id="parallax-img-1" class="parallax-move" src="triangle.png" />
+      <img id="parallax-img-4" class="parallax-move" src="square.png" />
+      <img id="parallax-img-3" class="parallax-move" data-ps-vertical-position="200" data-ps-horizontal-position="500" src="circle.png" />
+    </article>
+   
+  </section>
+  <footer>
+    <p class="foot">Copyright&nbsp; &copy; &nbsp;mohan 2019.</p>
+  </footer>
+</body>
+</html>
