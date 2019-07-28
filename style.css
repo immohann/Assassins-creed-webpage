@@ -128,6 +128,7 @@ section:nth-of-type(2) article:nth-of-type(1) {
 .foot{
 	align-content: center;
 	margin-left: 600px;
+	color: orangered;
 }
 
 #parallax-img-1 {
